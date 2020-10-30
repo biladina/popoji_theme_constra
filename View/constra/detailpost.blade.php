@@ -7,7 +7,8 @@
 				<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
 					<div class="post-content post-single">
 						<div class="post-media post-image image-angle">
-							<img src="{{ getPicture($post->picture, 'medium', $post->updated_by) }}" class="img-responsive" alt="">
+							<img src="{{ getPicture($post->picture, 'medium', $post->updated_by) }}" class="img-responsive" alt="{{ $post->picture_description }}">
+							<i>{{ $post->picture_description }}</i>
 						</div>
 
 						<div class="post-body">
